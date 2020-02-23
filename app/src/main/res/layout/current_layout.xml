@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/currentLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/last3HistoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:textColor="@color/white"/>
+
+    <ListView
+        android:id="@+id/last3historyLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="81dp"
+        android:background="@drawable/listview_border"
+        />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/todayChart"
+        android:layout_width="184dp"
+        android:layout_height="150dp"
+        android:layout_margin="0dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="204dp">
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <TextView
+        android:id="@+id/todaysLimitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:textColor="@color/white"
+
+         />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@drawable/mybutton"
+        android:text="dodaj"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteY="373dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
