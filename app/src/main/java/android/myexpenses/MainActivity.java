@@ -424,7 +424,7 @@ public class MainActivity extends AppCompatActivity implements Observable {
             }else{
                 currentWeek = limit/CalendarHelp.getCurrentMaxDayOfMonth();
             }
-
+            setIntPreference("currentWeekNumber", CalendarHelp.getCurrentWeekNumber());
             setIntPreference("currentMonth", m);
             setMultipleDoublePreferences(new String[]{"weekly", "left", "currentWeek"}, new double[]{weekly, limit, currentWeek});
         }
